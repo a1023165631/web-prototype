@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>webAppPrototype</title>
+	<link rel="stylesheet" href="../../js/modules/element-ui/css/index.css">
+	<link rel="stylesheet" href="../../css/common.css">
+	<link rel="stylesheet" href="../../css/main.css">
+	<link rel="stylesheet" href="../../css/webAppPrototype.css">
+</head>
+<body>
+	<div id="app">
+		<!-- header背景条颜色 -->
+		<div class="headerBgc"></div>
+		<div id="layoutBox">
+			<!-- 头部内容 -->
+			<div class="headerBox">
+				<img src="../../images/pcimg/logo.png" alt="">
+				<div class="inputBox">
+					<img src="../../images/pcimg/搜索.png" alt="">
+					<input type="text" placeholder="Search task……">
+				</div>
+				<img @click="nz" class="nz" src="../../images/pcimg/闹钟.png" alt="">
+				<img class="yy" src="../../images/pcimg/音乐.png" alt="">
+			</div>
+			<!-- 控件标头 -->
+			<div class="title">
+				<div class="content">All tasks</div>
+				<div>
+					<div class="time">24:59</div>
+					<div class="music"><img src="../../images/pcimg/播放按钮.png" alt=""></div>
+				</div>
+			</div>
+			<!-- 内容部分 -->
+			<div class="contentBox">
+				<div class="contentLeft">
+					<div class="home" id="toHome">
+						<img src="../../images/pcimg/home.png" alt="">
+						<span>Home</span>
+					</div>
+					<div class="home" id="toPitch">
+						<img style="width: 23px;" src="../../images/pcimg/叹号.png" alt="">
+						<span>Due soon</span>
+					</div>
+					<div class="home" id="prototype">
+						<img src="../../images/pcimg/卡.png" alt="">
+						<span>Finished</span>
+					</div>
+				</div>
+				<div class="contentRight">
+					<div class="tabBox">
+						<div class="title">Web design assignments</div>
+						<div class="itemBox">
+							
+
+							<div class="item" style="background:#F8CCCF">
+								<div><img class="showModal" src="../../images/pcimg/分类.png" alt=""></div>
+								<div class="titleNick">Web app prototype</div>
+								<div class="des">Created on March 1,2022</div>
+								<div class="timeBox">
+									<p>Due date:</p>
+									<p>27/05/2022</p>
+								</div>
+							</div>
+						</div>
+
+					
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- 遮罩层 颜色控件模态框 -->
+		<div id="showModal">
+			<div class="modalBox">
+				<div class="item1">
+					<span>Name:</span>
+					<input type="text" placeholder="Enter the of the new task">
+				</div>
+				<div class="item2">
+					<span style="margin-right: 0px;">Theme color:</span>
+					<div class="colors">
+						<div class="color1"></div>
+						<div class="color2"></div>
+						<div class="color3"></div>
+						<div class="color4"></div>
+						<div class="color5"></div>
+						<div class="color6"></div>
+						<div class="color7"></div>
+						<div class="color8"></div>
+					</div>
+				</div>
+				<div class="item3">
+					<span>Due date:</span>
+					<input type="text" placeholder="Input due date">
+				</div>
+			</div>
+			<div class="clear">X</div>
+		</div>
+
+		<!-- 遮罩层 音乐控件 -->
+		<div class="musicModal">
+			<div class="musicBox">
+				<img src="../../images/pcimg/musicBgc.png" alt="">
+				<!-- 输入框 -->
+				<div class="searchBox">
+					<input type="text" placeholder="Search for songs artists">
+					<span id="clear">X</span>
+				</div>
+				<!-- 英文描述 -->
+				<div class="englishDes">
+					<img src="../../images/pcimg/musicMsg.png" alt="">
+				</div>
+				<!-- 滑动条 -->
+				<div class="slider">
+					<el-slider v-model="value3"></el-slider>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../../js/modules/jquery.js"></script>
+	<script src="../../js/modules/vue.min.js"></script>
+	<script src="../../js/modules/element-ui/js/index.js"></script>
+	<script src="../main/webAppPrototype.js"></script>
+	<script>
+		
+		var toPitch = document.getElementById('toPitch');
+		var prototype = document.getElementById('prototype');
+		var addTask = document.getElementById('addTask');
+		var toHome = document.getElementById('toHome')
+	
+		toPitch.onclick = function() {
+			window.location.href = './webAppPitch.html'
+		}
+		prototype.onclick = function() {
+			window.location.href = './webAppPrototype.html'
+		}
+		// addTask.onclick = function() {
+		// 	window.location.href = './pitchDetail.html'
+		// }
+		toHome.onclick = function() {
+			console.log(1)
+			window.location.href = './main.html'
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+#laybox .headerIcon {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#laybox .headerIcon div:nth-child(1) {
+  padding-left: 20px;
+}
+#laybox .headerIcon div:nth-child(2) {
+  padding-left: 80px;
+}
+#laybox .headerIcon div:nth-child(3) {
+  padding-right: 20px;
+}
+#laybox .headerIcon img {
+  height: 60px;
+}
+#laybox .searchBox {
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #4B4442;
+  margin: 30px auto;
+  position: relative;
+}
+#laybox .searchBox input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  text-indent: 50px;
+}
+#laybox .searchBox img {
+  width: 25px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+#laybox .contentBox {
+  width: 90%;
+  height: 370px;
+  margin: 20px auto;
+}
+#laybox .contentBox p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+#laybox .contentBox .content {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #6A7273;
+  border-radius: 10px;
+  position: relative;
+}
+#laybox .contentBox .content h5 {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#laybox .contentBox .content .tabBox {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+#laybox .contentBox .content .tabBox .item {
+  width: 45%;
+  height: 130px;
+  background-color: #F7F5CA;
+  position: relative;
+  border-radius: 10px;
+}
+#laybox .contentBox .content .tabBox .item img {
+  width: 30px;
+  padding-left: 110px;
+}
+#laybox .contentBox .content .tabBox .item h4 {
+  text-align: center;
+  margin-top: -15px;
+}
+#laybox .contentBox .content .tabBox .item .des {
+  font-size: 12px;
+  margin-left: 8%;
+  margin-top: 10px;
+}
+#laybox .contentBox .content .tabBox .item .time {
+  margin-left: 70px;
+  margin-top: 20px;
+}
+#laybox .contentBox .content .tabBox .item .time span {
+  font-size: 12px;
+  font-weight: bold;
+}
+#laybox .contentBox .content .inline {
+  width: 90%;
+  height: 3px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+#laybox .contentBox .content .inline .inlineLeft {
+  width: 50%;
+  height: 3px;
+  background-color: #B5B6B6;
+}
+#laybox .contentBox .content input {
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 8px;
+  padding: 0 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+#laybox .contentBox .content .taskBox {
+  width: 43%;
+  height: 120px;
+  border: 1px solid #5D5E5D;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#laybox .contentBox .content .taskBox img {
+  width: 20px;
+}
+#laybox .contentBox .content .taskBox span {
+  margin-left: 5px;
+}
+#laybox .footerIcon {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+#laybox .footerIcon img {
+  width: 60px;
+}

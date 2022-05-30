@@ -1,0 +1,168 @@
+#laybox {
+  // header icon
+  .headerIcon {
+    width: 100%;
+    height: 50px;
+    // background-color: pink;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    div:nth-child(1) {
+      padding-left: 20px;
+    }
+    div:nth-child(2) {
+      padding-left: 80px;
+    }
+    div:nth-child(3) {
+      padding-right: 20px;
+    }
+    img {
+      height: 60px;
+    }
+  }
+  // searchbox
+  .searchBox {
+    width: 90%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #4B4442;
+    margin:30px auto;
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      text-indent: 50px;
+    }
+    img {
+      width: 25px;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+  }
+  // contentBox
+  .contentBox {
+    width: 90%;
+    height: 370px;
+    margin: 20px auto;
+    p{
+      font-size: 18px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+    }
+    .content{
+      width: 100%;
+      height: 100%;
+      border: 1px solid #6A7273;
+      border-radius: 10px;
+      position: relative;
+      h5 {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      .tabBox {
+        width: 100%;
+        // padding-left: 10px;
+        // padding-right: 30px;
+        
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-around;
+        .item {
+         width: 45%;
+         height: 130px;
+         background-color: #F7F5CA;
+         position: relative;
+         border-radius: 10px;
+         img {
+           width: 30px;
+           padding-left: 110px;
+         }
+         h4 {
+           text-align: center;
+           margin-top: -15px;
+         }
+         .des {
+           font-size: 12px;
+           margin-left:8%;
+           margin-top: 10px;
+           
+         }
+         .time {
+           margin-left: 70px;
+           margin-top: 20px;
+           span {
+            font-size: 12px;
+            font-weight: bold;
+           }
+         }
+        }
+       }
+       // 线条
+      .inline {
+        width: 90%;
+        height: 3px;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: 10px;
+        .inlineLeft {
+         
+          width: 50%;
+          height: 3px;
+          background-color: #B5B6B6;
+        }
+      }
+      // 输入框
+      input {
+        width: 80px;
+        height: 20px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        font-size: 8px;
+        padding: 0 10px;
+        margin-top: 10px;
+        margin-left: 20px;
+        
+      }
+      // add taskBox
+      .taskBox {
+        width: 43%;
+         height: 120px;
+         border: 1px solid #5D5E5D;
+         border-radius: 10px;
+         margin-left:5%;
+         margin-top: 8px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         img {
+           width: 20px;
+
+         }
+         span {
+           margin-left: 5px;
+         }
+      }
+     
+    }
+    
+    
+  }
+  // footerIcon
+  .footerIcon {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    img {
+      width: 60px;
+    }
+  }
+}

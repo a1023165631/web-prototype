@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1, user-scalable=no">
+	<title>官方网站</title>
+	<link rel="stylesheet" href="./css/modules/bootstrap.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/pcindex.css">
+</head>
+
+<body>
+	<div id="layoutBox">
+		<!-- 头部logo -->
+		<div class="header">
+			<img src="./images/pcimg/logo.png" alt="">
+			<span>Rockets plan</span>
+		</div>
+		<!-- 英文描述 -->
+		<div class="eglisthDes">
+			<img src="./images/pcimg/des.png" alt="">
+		</div>
+		<!-- login登录面板 -->
+		<div class="login">
+			<div class="loginBox">
+				<img src="./images/pcimg/Log In.png" alt="">
+				<div class="loginInput1">
+					<input type="text" placeholder="Enter your email or mobile phone number">
+				</div>
+				<div class="loginInput2" id="toMain">
+					<input type="text" placeholder="Verification code">
+				</div>
+			</div>
+		</div>
+		<!-- 思考图片 -->
+		<div class="thinkImg">
+			<img src="./images/pcimg/sikao.png" alt="">
+		</div>
+
+	</div>
+
+
+		<script src="./js/modules/vue.min.js"></script>
+		<script src="./js/modules/jquery.js"></script>
+		<script src="./js/modules/bootstrap.min.js"></script>
+		<!-- <script src="./js/common.js" ></script> -->
+		<script src="./js/pcindex.js" ></script>
+		<script>
+			var tomain = document.getElementById('toMain');
+			tomain.onclick = function() {
+				window.location.href = './admin/main/main.html'
+			}
+		</script>
+
+
+</body>
+
+</html>

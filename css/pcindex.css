@@ -1,0 +1,93 @@
+@media screen and (min-width: 1200px) {
+  #layoutBox {
+    position: relative;
+    width: 1170px;
+    height: 500px;
+    margin: 0 auto;
+  }
+  #layoutBox .header {
+    margin-top: 40px;
+  }
+  #layoutBox .header img {
+    height: 80px;
+  }
+  #layoutBox .header span {
+    color: #CFBDDA;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+  }
+  #layoutBox .eglisthDes {
+    position: relative;
+  }
+  #layoutBox .eglisthDes img {
+    width: 550px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+  #layoutBox .login {
+    width: 420px;
+    height: 220px;
+    background-color: #F7F5CA;
+    border-radius: 20px;
+    margin-top: 150px;
+  }
+  #layoutBox .login .loginBox {
+    position: relative;
+  }
+  #layoutBox .login .loginBox img {
+    width: 100px;
+    margin-top: 20px;
+    position: absolute;
+    left: 30px;
+  }
+  #layoutBox .login .loginBox .loginInput1 {
+    width: 60%;
+    height: 60px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 50px;
+  }
+  #layoutBox .login .loginBox .loginInput1 input {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+  #layoutBox .login .loginBox .loginInput2 {
+    cursor: pointer;
+    width: 30%;
+    height: 60px;
+    position: absolute;
+    top: 135px;
+    right: 40px;
+    background-color: #fff;
+    border-radius: 50px;
+  }
+  #layoutBox .login .loginBox .loginInput2 input {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+  #layoutBox .thinkImg {
+    position: relative;
+  }
+  #layoutBox .thinkImg img {
+    width: 300px;
+    position: absolute;
+    right: 0;
+  }
+}
