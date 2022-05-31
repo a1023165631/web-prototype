@@ -1,3 +1,6 @@
+#laybox {
+  position: relative;
+}
 #laybox .headerIcon {
   width: 100%;
   height: 50px;
@@ -144,4 +147,172 @@
 }
 #laybox .footerIcon img {
   width: 60px;
+}
+#laybox #showModal {
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+}
+#laybox #showModal .modalBox {
+  width: 90%;
+  height: 300px;
+  border: 1px solid #231916;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+#laybox #showModal .modalBox .title {
+  margin-left: 80px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+#laybox #showModal .modalBox .list1 {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+#laybox #showModal .modalBox .list1 input {
+  width: 180px;
+  height: 20px;
+  border-radius: 5px;
+}
+#laybox #showModal .modalBox .item3 {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+#laybox #showModal .modalBox .item3 input {
+  width: 160px;
+  height: 20px;
+  border-radius: 5px;
+}
+#laybox #showModal .modalBox .item2 {
+  width: 100%;
+  margin: 40px 20%;
+  display: flex;
+  position: relative;
+  top: 20px;
+  left: -18px;
+}
+#laybox #showModal .modalBox .item2 .colors {
+  width: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 20px;
+  top: -20px;
+}
+#laybox #showModal .modalBox .item2 .colors .color1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #F7F5CA;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#laybox #showModal .modalBox .item2 .colors .color2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FBE3CE;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#laybox #showModal .modalBox .item2 .colors .color3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #F8CCCF;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#laybox #showModal .modalBox .item2 .colors .color4 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E6BED8;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#laybox #showModal .modalBox .item2 .colors .color5 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #A1BEE4;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#laybox #showModal .modalBox .item2 .colors .color6 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #8FD2E9;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#laybox #showModal .modalBox .item2 .colors .color7 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #BADCB4;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#laybox #showModal .modalBox .item2 .colors .color8 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #A1D6CC;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#laybox #showModal .clear {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  position: absolute;
+  right: 30px;
+  top: 205px;
+  cursor: pointer;
+}
+#laybox .musicBox {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+}
+#laybox .musicBox img {
+  width: 80%;
+}
+#laybox .musicBox input {
+  width: 150px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  padding: 0 10px;
+}
+#laybox .musicBox .slider {
+  width: 200px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+#laybox .musicBox .del {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4%;
+  left: 71%;
 }

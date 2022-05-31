@@ -30,7 +30,7 @@
     <div class="loginBox">
       <div class="logoImg"><img src="./images/mimg/loginTitle.png" alt=""></div>
       <div class="input1"><input type="text" placeholder="Enter your email or mobile phone number"></div>
-      <div class="input2"><input type="text" placeholder="Verification code"></div>
+      <div class="input2"><input @click="toUrl" type="text" placeholder="Verification code"></div>
     </div>
     <!-- 思考 -->
     <div class="footerImg">
@@ -43,7 +43,20 @@
   <script src="./js/modules/jquery.js"></script>
   <script src="./js/modules/bootstrap.min.js"></script>
   <script src="./js/common.js" ></script>
-  <script src="./js/mindex.js" ></script>
+  <!-- <script src="./js/mindex.js" ></script> -->
+  <script>
+    var v = new Vue({
+      el:'#layoutBox',
+      data: {
+
+      },
+      methods: {
+        toUrl() {
+          window.location.href = './mobile/mmain.html'
+        }
+      }
+    })
+  </script>
 </body>
 
 </html>

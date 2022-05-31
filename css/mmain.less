@@ -1,4 +1,5 @@
 #laybox {
+  position: relative;
   // header icon
   .headerIcon {
     width: 100%;
@@ -163,6 +164,190 @@
     margin-top: 60px;
     img {
       width: 60px;
+    }
+  }
+
+  // 遮罩层模态框
+  #showModal {
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .9;
+    // display: none;
+
+    .modalBox {
+      width: 90%;
+      height: 300px;
+      border: 1px solid #231916;
+      // background-color: #FFFFFF;
+      border-radius: 10px;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%);
+
+      .title {
+        margin-left: 80px;
+        margin-top: 30px;
+        font-size: 20px;
+      }
+      .list1 {
+        margin-left: 50px;
+        margin-top: 40px;
+        input {
+          width: 180px;
+          height: 20px;
+          border-radius: 5px;
+        }
+      }
+      .item3 {
+        margin-left: 50px;
+        margin-top: 20px;
+        input {
+          width: 160px;
+          height: 20px;
+          border-radius: 5px;
+        }
+      }
+
+      .item2 {
+        width: 100%;
+        margin: 40px 20%;
+        display: flex;
+        position: relative;
+        top: 20px;
+        left: -18px;
+        .colors {
+          width: 130px;
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          left: 20px;
+          top: -20px;
+          
+          .color1 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #F7F5CA;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+          .color2 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #FBE3CE;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+          .color3 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #F8CCCF;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+          .color4 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #E6BED8;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+          .color5 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #A1BEE4;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+          .color6 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #8FD2E9;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+          .color7 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #BADCB4;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+          .color8 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #A1D6CC;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    
+
+
+    }
+    .clear {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        background-color: #fff;
+        text-align: center;
+        position: absolute;
+        right: 30px;
+        top: 205px;
+        cursor: pointer;
+    }
+  }
+  // 音乐控件
+  .musicBox {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+  
+    img {
+      width: 80%;
+    }
+    input {
+      width: 150px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 5%;
+      left: 15%;
+      padding: 0 10px;
+    }
+    .slider {
+      width: 200px;
+      position: absolute;
+      top: 40%;
+      left: 10%;
+   
+    }
+    .del {
+      width: 20px;
+      height: 20px;
+      // background-color: pink;
+      position: absolute;
+      top: 4%;
+      left: 71%;
     }
   }
 }

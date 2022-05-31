@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>首页</title>
+  <title>pitchDetail</title>
   <link rel="stylesheet" href="../js/modules/element-ui/css/index.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/mmain.css">
+  <link rel="stylesheet" href="../css/mPitchDetail.css">
+  <style>
+    .tabBox {
+      margin-left: -80px;
+    }
+  </style>
 </head>
+
 <body>
   <div id="laybox">
     <!-- header icon -->
     <div class="headerIcon">
       <div><img src="../images/mimg/login.png" alt=""></div>
-      <div @click="toNz"><img src="../images/mimg/nz.png" alt=""></div>
-      <div @click="showMusicModal"><img src="../images/mimg/音乐.png" alt=""></div>
+      <div><img @click="toNz" src="../images/mimg/nz.png" alt=""></div>
+      <div><img @click="showMusicModal" src="../images/mimg/音乐.png" alt=""></div>
     </div>
     <!-- searchBox -->
     <div class="searchBox">
@@ -24,9 +32,8 @@
     </div>
     <!-- contentBox -->
     <div class="contentBox">
-      <p>ALL tasks</p>
+      <p>Due soon</p>
       <div class="content">
-        <h5>Web design assignments</h5>
         <div class="tabBox">
           <div class="item">
             <img @click="showModal" src="../images/pcimg/分类.png" alt="">
@@ -37,37 +44,15 @@
               <span>18/03/2022</span>
             </div>
           </div>
-
-          <div class="item" style="background-color: #FBE3CE;">
-            <img @click="showModal" src="../images/pcimg/分类.png" alt="">
-            <h4>Web app pitch</h4>
-            <p class="des">Created March 1,2022</p>
-            <div class="time" >
-              <span>Due date:</span><br>
-              <span>15/04/2022</span>
-            </div>
-          </div>
-  
-        </div>
-        <!-- 线条 -->
-        <div class="inline">
-          <div class="inlineLeft"></div>
-        </div>
-        <!-- 输入框 -->
-        <input type="text" placeholder="Create a group">
-        <!-- add taskbox -->
-        <div class="taskBox">
-          <img src="../images/pcimg/_增加.png" alt="">
-          <span>A new task</span>
         </div>
       </div>
-      
-      
+
+
     </div>
     <!-- footerICON -->
     <div class="footerIcon">
-      <img src="../images/mimg/Home.png" alt="">
-      <img @click="toFitch" src="../images/mimg/Due soon.png" alt="">
+      <img @click="toHome" src="../images/mimg/Home.png" alt="">
+      <img src="../images/mimg/Due soon.png" alt="">
       <img @click="toPrototype" src="../images/mimg/Finished.png" alt="">
     </div>
 
@@ -98,8 +83,8 @@
       </div>
       <div @click="noneModal" class="clear">X</div>
     </div>
-    <!-- 音乐控件 -->
-    <div v-if="isMusicTrue" class="musicBox">
+     <!-- 音乐控件 -->
+     <div v-if="isMusicTrue" class="musicBox">
       <img src="../images/mimg/musicBgc.png" alt="">
       <input type="text" placeholder="Search for songs or artists">
       <div class="slider">
@@ -108,16 +93,21 @@
       <div @click="hideMusicModal" class="del"></div>
     </div>
   </div>
-
+  
   <script src="../js/modules/vue.min.js"></script>
   <script src="../js/modules/element-ui/js/index.js"></script>
+ 
   <script>
     var v = new Vue({
-      el:'#laybox',
-      data:{ isTrue:false,value2:80,isMusicTrue:false},
+      el: '#laybox',
+      data: {
+        isTrue:false,
+        isMusicTrue:false,
+        value2:80
+      },
       methods: {
-        toFitch() {
-          window.location.href = './pitchDetail.html'
+        toHome() {
+          window.location.href = './mmain.html'
         },
         toPrototype() {
           window.location.href = './prototypeDetail.html'
@@ -142,6 +132,7 @@
     })
 
   </script>
-  
+
 </body>
+
 </html>
