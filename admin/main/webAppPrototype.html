@@ -23,7 +23,7 @@
 					<input type="text" placeholder="Search task……">
 				</div>
 				<img @click="nz" class="nz" src="../../images/pcimg/闹钟.png" alt="">
-				<img class="yy" src="../../images/pcimg/音乐.png" alt="">
+				<img @click="showMusicModal" class="yy" src="../../images/pcimg/音乐.png" alt="">
 			</div>
 			<!-- 控件标头 -->
 			<div class="title">
@@ -102,13 +102,16 @@
 		</div>
 
 		<!-- 遮罩层 音乐控件 -->
-		<div class="musicModal">
+		<div class="musicModal" v-if="isMusicTrue">
+			<audio id="audio" src="../../static/audio.mp3" autoplay>
+				您的浏览器不支持 audio 标签。
+			</audio>
 			<div class="musicBox">
 				<img src="../../images/pcimg/musicBgc.png" alt="">
 				<!-- 输入框 -->
 				<div class="searchBox">
 					<input type="text" placeholder="Search for songs artists">
-					<span id="clear">X</span>
+					<span @click="hideMusicModal" id="clear">X</span>
 				</div>
 				<!-- 英文描述 -->
 				<div class="englishDes">

@@ -100,7 +100,10 @@
     </div>
     <!-- 音乐控件 -->
     <div v-if="isMusicTrue" class="musicBox">
-      <img src="../images/mimg/musicBgc.png" alt="">
+      <audio id="audio" src="../static/audio.mp3" autoplay>
+        您的浏览器不支持 audio 标签。
+      </audio>
+      <img id="bf" src="../images/mimg/musicBgc.png" alt="">
       <input type="text" placeholder="Search for songs or artists">
       <div class="slider">
         <el-slider v-model="value2"></el-slider>
@@ -111,7 +114,9 @@
 
   <script src="../js/modules/vue.min.js"></script>
   <script src="../js/modules/element-ui/js/index.js"></script>
+  
   <script>
+    
     var v = new Vue({
       el:'#laybox',
       data:{ isTrue:false,value2:80,isMusicTrue:false},

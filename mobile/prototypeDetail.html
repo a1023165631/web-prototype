@@ -82,6 +82,9 @@
     </div>
     <!-- 音乐控件 -->
     <div v-if="isMusicTrue" class="musicBox">
+      <audio id="audio" src="../static/audio.mp3" autoplay>
+        您的浏览器不支持 audio 标签。
+      </audio>
       <img src="../images/mimg/musicBgc.png" alt="">
       <input type="text" placeholder="Search for songs or artists">
       <div class="slider">
