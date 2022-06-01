@@ -6,8 +6,8 @@
   .headerBgc {
     width: 100%;
     height: 50px;
-    background-color: #C5E4EB;
-    border: 1px solid #889FA4;
+    // background-color: #C5E4EB;
+    // border: 1px solid #889FA4;
     margin-top: 50px;
     position: relative;
   }
@@ -26,17 +26,17 @@
         height: 54px;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 25px;
       }
       .inputBox {
-        width: 330px;
+        width: 93%;
         height: 100%;
         border-radius: 10px;
         background-color: #fff;
         border: 1px solid #231916;
         position: absolute;
         top: 0;
-        left: 200px;
+        left: 110px;
         img {
           // display: block;
          width: 30px;
@@ -75,7 +75,7 @@
       .content {
         font-size: 28px;
         margin-left: 150px;
-        margin-top: 50px;
+        margin-top: 30px;
         
       }
       .time {
@@ -109,16 +109,25 @@
       margin-top: 30px;
       display: flex;
       .contentLeft {
-        width: 12%;
-        height: 100%;
+        width: 10%;
+        height: 1000px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        background-color: #C5E6ED;
+        position: relative;
+        top: -90px;
+        cursor: pointer;
+     
         .home {
           display: flex;
           // justify-content: center;
           align-items: center;
           margin-bottom: 20px;
+          // margin-top: -50px;
+          position: relative;
+          top: -350px;
           img {
             width: 30px;
           }
@@ -132,7 +141,7 @@
       .contentRight{
         width: 100%;
         height: 100%;
-        border: 1px solid #707677;
+        // border: 1px solid #707677;
         border-radius: 20px;
         .tabBox{
           width: 100%;
@@ -140,8 +149,8 @@
        
           .title{
             font-weight: bold;
-            margin-left: 45px;
-            margin-top: 20px;
+            margin-left: 25px;
+            margin-top: 8px;
           }
           .itemBox{
            width: 100%;
@@ -149,6 +158,8 @@
            display: flex;
            justify-content: space-between;
            flex-wrap: wrap;
+           margin-left: -15px;
+
            .item {
             width: 25%;
             height: 185px;
@@ -184,10 +195,10 @@
             height: 30px;
             border-radius: 20px;
             background-color: #fff;
-            margin-left: 90px;
+            margin-left: 50px;
             margin-top: 40px;
             position: relative;
-            top: -35px;
+            top: -15px;
             input {
               width: 100%;
               height: 100%;
@@ -204,8 +215,8 @@
             height: 185px;
             border: 1px solid #8C9B9E;
             border-radius: 10px;
-            margin-left: 40px;
-            margin-top: -30px;
+            margin-left: 25px;
+            margin-top: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -253,6 +264,10 @@
           border-radius: 10px;
           outline: none;
           text-indent: 10px;
+          text-align: center;
+        }
+        span {
+          font-weight: bold;
         }
       }
 
@@ -261,6 +276,9 @@
         display: flex;
         position: relative;
         top: 20px;
+        span {
+          font-weight: bold;
+        }
         .colors {
           width: 180px;
           display: flex;
@@ -341,10 +359,15 @@
         input {
           width: 210px;
           height: 30px;
-          background-color: #fff;
+          background-color: #fdefef;
           border-radius: 10px;
           outline: none;
           text-indent: 10px;
+          text-align: center;
+          
+        }
+        span {
+          font-weight: bold;
         }
       }
 

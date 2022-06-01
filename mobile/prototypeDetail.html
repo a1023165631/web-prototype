@@ -21,7 +21,7 @@
     <div class="headerIcon">
       <div><img src="../images/mimg/login.png" alt=""></div>
       <div><img @click="toNz" src="../images/mimg/nz.png" alt=""></div>
-      <div><img  @click="showMusicModal" src="../images/mimg/音乐.png" alt=""></div>
+      <!-- <div><img  @click="showMusicModal" src="../images/mimg/音乐.png" alt=""></div> -->
     </div>
     <!-- searchBox -->
     <div class="searchBox">
@@ -52,6 +52,7 @@
       <img @click="toHome" src="../images/mimg/Home.png" alt="">
       <img @click="toFitch" src="../images/mimg/Due soon.png" alt="">
       <img src="../images/mimg/Finished.png" alt="">
+      <img @click="showMusicModal" src="../images/mimg/musicIcon.png" alt="">
     </div>
      <!-- 遮罩层 颜色控件模态框 -->
      <div v-if="isTrue" id="showModal">

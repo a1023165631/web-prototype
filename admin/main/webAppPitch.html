@@ -4,129 +4,124 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>webAppPitch</title>
+	<title>due soon</title>
 	<link rel="stylesheet" href="../../js/modules/element-ui/css/index.css">
 	<link rel="stylesheet" href="../../css/common.css">
 	<link rel="stylesheet" href="../../css/webAppPitch.css">
-	<link rel="stylesheet" href="../../css/main.css">
-
-	
 </head>
 <body>
 	<div id="app">
-		<!-- header背景条颜色 -->
-		<div class="headerBgc"></div>
-		<div id="layoutBox">
-			<!-- 头部内容 -->
-			<div class="headerBox">
-				<img src="../../images/pcimg/logo.png" alt="">
-				<div class="inputBox">
-					<img src="../../images/pcimg/搜索.png" alt="">
-					<input type="text" placeholder="Search task……">
-				</div>
-				<img @click="nz" class="nz" src="../../images/pcimg/闹钟.png" alt="">
-				<img @click="showMusicModal" class="yy" src="../../images/pcimg/音乐.png" alt="">
+			<!-- header背景条颜色 -->
+	<div class="headerBgc"></div>
+	<div id="layoutBox">
+		<!-- 头部内容 -->
+		<div class="headerBox">
+			<img src="../../images/pcimg/logo.png" alt="">
+			<div class="inputBox">
+				<img src="../../images/pcimg/搜索.png" alt="">
+				<input type="text" placeholder="Search task……">
 			</div>
-			<!-- 控件标头 -->
-			<div class="title">
-				<div class="content">All tasks</div>
-				<div>
-					<div class="time">24:59</div>
-					<div class="music"><img src="../../images/pcimg/播放按钮.png" alt=""></div>
+			<!-- <img @click="nz" class="nz" src="../../images/pcimg/闹钟.png" alt="">
+			<img @click="showMusicModal" class="yy" src="../../images/pcimg/音乐.png" alt=""> -->
+		</div>
+		<!-- 控件标头 -->
+		<div class="title">
+			<div class="content">Emergency</div>
+			<!-- <div>
+				<div id="time" class="time">25:0</div>
+				<div class="music"><img src="../../images/pcimg/播放按钮.png" alt=""></div>
+			</div> -->
+		</div>
+		<!-- 内容部分 -->
+		<div class="contentBox">
+			<div class="contentLeft">
+				<div @click="toHome" class="home" style="margin-left: -12px;">
+					<img style="width: 25px;" src="../../images/pcimg/home.png" alt="">
+					<span>Home</span>
+				</div>
+				<div class="home" id="toPitch">
+					<img style="width: 18px;" src="../../images/pcimg/叹号.png" alt="">
+					<span>Due soon</span>
+				</div>
+				<div class="home" id="prototype">
+					<img style="width: 25px;" src="../../images/pcimg/卡.png" alt="">
+					<span>Finished</span>
+				</div>
+				<div @click="showMusicModal" class="home" id="prototype" style="margin-left: -12px;">
+					<img style="width: 33px;" src="../../images/pcimg/yy.png" alt="">
+					<span style="margin-top: -2px;">Music</span>
 				</div>
 			</div>
-			<!-- 内容部分 -->
-			<div class="contentBox">
-				<div class="contentLeft">
-					<div class="home" id="toHome">
-						<img src="../../images/pcimg/home.png" alt="">
-						<span>Home</span>
-					</div>
-					<div class="home" id="toPitch">
-						<img style="width: 23px;" src="../../images/pcimg/叹号.png" alt="">
-						<span>Due soon</span>
-					</div>
-					<div class="home" id="prototype">
-						<img src="../../images/pcimg/卡.png" alt="">
-						<span>Finished</span>
-					</div>
-				</div>
-				<div class="contentRight">
-					<div class="tabBox">
-						<div class="title">Web design assignments</div>
-						<div class="itemBox">
-						
-
-							<div class="item" style="background:#FBE3CE">
-								<div><img class="showModal" src="../../images/pcimg/分类.png" alt=""></div>
-								<div class="titleNick">Web app pitch</div>
-								<div class="des">Created on March 1,2022</div>
-								<div class="timeBox">
-									<p>Due date:</p>
-									<p>15/04/2022</p>
-								</div>
+			<div class="contentRight">
+				<div class="tabBox">
+					<div class="title">Web design assignments</div>
+					<div class="itemBox">
+						<div class="item" style="background:#FBE3CE;margin-top: 50px;">
+							<div><img class="showModal" src="../../images/pcimg/分类.png" alt=""></div>
+							<div id="addTask" class="titleNick">Web app pitch</div>
+							<div class="des">Created on March 1,2022</div>
+							<div class="timeBox">
+								<p>Due date:</p>
+								<p>15/04/2022</p>
 							</div>
-
-						
 						</div>
-
-					
 					</div>
+
 				</div>
 			</div>
-
 		</div>
 
-			<!-- 遮罩层 颜色控件模态框 -->
-		<div id="showModal">
-			<div class="modalBox">
-				<div class="item1">
-					<span>Name:</span>
-					<input type="text" placeholder="Enter the of the new task">
-				</div>
-				<div class="item2">
-					<span style="margin-right: 0px;">Theme color:</span>
-					<div class="colors">
-						<div class="color1"></div>
-						<div class="color2"></div>
-						<div class="color3"></div>
-						<div class="color4"></div>
-						<div class="color5"></div>
-						<div class="color6"></div>
-						<div class="color7"></div>
-						<div class="color8"></div>
-					</div>
-				</div>
-				<div class="item3">
-					<span>Due date:</span>
-					<input type="text" placeholder="Input due date">
+	</div>
+
+	<!-- 遮罩层 颜色控件模态框 -->
+	<div id="showModal">
+		<div class="modalBox">
+			<div class="item1">
+				<span>Name:</span>
+				<input type="text" placeholder="Enter the of the new task">
+			</div>
+			<div class="item2">
+				<span style="margin-right: 0px;">Theme color:</span>
+				<div class="colors">
+					<div class="color1"></div>
+					<div class="color2"></div>
+					<div class="color3"></div>
+					<div class="color4"></div>
+					<div class="color5"></div>
+					<div class="color6"></div>
+					<div class="color7"></div>
+					<div class="color8"></div>
 				</div>
 			</div>
-			<div class="clear">X</div>
+			<div class="item3">
+				<span>Due date:</span>
+				<input type="text" placeholder="Input due date">
+			</div>
 		</div>
-
-		<!-- 遮罩层 音乐控件 -->
-		<div class="musicModal" v-if="isMusicTrue">
+		<div class="clear">X</div>
+	</div>
+	<!-- 遮罩层 音乐控件 -->
+	<div class="musicModal" v-if="isMusicTrue">
+			<div class="musicBox">
 			<audio id="audio" src="../../static/audio.mp3" autoplay>
 				您的浏览器不支持 audio 标签。
 			</audio>
-			<div class="musicBox">
-				<img src="../../images/pcimg/musicBgc.png" alt="">
-				<!-- 输入框 -->
-				<div class="searchBox">
-					<input type="text" placeholder="Search for songs artists">
-					<span  @click="hideMusicModal" id="clear">X</span>
-				</div>
-				<!-- 英文描述 -->
-				<div class="englishDes">
-					<img src="../../images/pcimg/musicMsg.png" alt="">
-				</div>
-				<!-- 滑动条 -->
-				<div class="slider">
-					<el-slider v-model="value4"></el-slider>
-				</div>
+			<img src="../../images/pcimg/musicBgc.png" alt="">
+			<!-- 输入框 -->
+			<div class="searchBox">
+				<input type="text" placeholder="Search for songs artists">
+				<span @click="hideMusicModal" id="clear">X</span>
+			</div>
+			<!-- 英文描述 -->
+			<div class="englishDes">
+				<img src="../../images/pcimg/musicMsg.png" alt="">
+			</div>
+			<!-- 滑动条 -->
+			<div class="slider">
+				<el-slider v-model="value2"></el-slider>
 			</div>
 		</div>
+	</div>
 	</div>
 
 	<script src="../../js/modules/jquery.js"></script>
@@ -134,7 +129,10 @@
 	<script src="../../js/modules/element-ui/js/index.js"></script>
 	<script src="./webAppPitch copy.js"></script>
 	<script>
+	
 		$(function() {
+			$("body").parent().css("overflow-y","hidden");
+			$("body").parent().css("overflow-X","hidden");
 			// 显示颜色模态框
 			$('.showModal').click(function() {
 				$('#showModal').css('display','block')
@@ -143,29 +141,53 @@
 			$('.clear').click(function() {
 				$('#showModal').css('display','none')
 			})
-	
 		})
 	</script>
 	<script>
-		
-		var toPitch = document.getElementById('toPitch');
-		var prototype = document.getElementById('prototype');
-		var addTask = document.getElementById('addTask');
-		var toHome = document.getElementById('toHome')
-	
-		toPitch.onclick = function() {
-			window.location.href = './webAppPitch.html'
-		}
-		prototype.onclick = function() {
-			window.location.href = './webAppPrototype.html'
-		}
-		// addTask.onclick = function() {
-		// 	window.location.href = './pitchDetail.html'
-		// }
-		toHome.onclick = function() {
-			window.location.href = './main.html'
-		}
-	</script>
 
+			var toPitch = document.getElementById('toPitch');
+			var prototype = document.getElementById('prototype');
+			var addTask = document.getElementById('addTask');
+
+			// var maxtime = 25 * 60; //  
+
+			// function CountDown() {
+
+			// 		if (maxtime >= 0) {
+
+			// 				minutes = Math.floor(maxtime / 60);
+
+			// 				seconds = Math.floor(maxtime % 60);
+
+			// 			var	msg = minutes + ":" + seconds;
+
+			// 			document.getElementById('time').innerHTML = msg;
+
+			// 				if (maxtime == 5 * 60)alert("距离结束仅剩5分钟");
+
+			// 						--maxtime;
+
+			// 		} else{
+
+			// 				clearInterval(timer);
+
+			// 				alert("时间到，结束!");
+
+			// 		}
+
+			// }
+
+			// timer = setInterval("CountDown()", 1000);  
+		
+			toPitch.onclick = function() {
+				window.location.href = './webAppPitch.html'
+			}
+			prototype.onclick = function() {
+				window.location.href = './webAppPrototype.html'
+			}
+			addTask.onclick = function() {
+				window.location.href = './pitchDetail.html'
+			}
+		</script>
 </body>
 </html>

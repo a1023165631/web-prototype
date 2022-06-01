@@ -12,10 +12,7 @@
   padding-left: 20px;
 }
 #laybox .headerIcon div:nth-child(2) {
-  padding-left: 80px;
-}
-#laybox .headerIcon div:nth-child(3) {
-  padding-right: 20px;
+  margin-right: 40px;
 }
 #laybox .headerIcon img {
   height: 60px;
@@ -50,14 +47,14 @@
   margin: 20px auto;
 }
 #laybox .contentBox p {
-  font-size: 18px;
+  font-size: 23px;
   margin-bottom: 10px;
   margin-left: 20px;
+  font-weight: bold;
 }
 #laybox .contentBox .content {
   width: 100%;
   height: 100%;
-  border: 1px solid #6A7273;
   border-radius: 10px;
   position: relative;
 }

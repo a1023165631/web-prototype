@@ -21,31 +21,35 @@
 				<img src="../../images/pcimg/搜索.png" alt="">
 				<input type="text" placeholder="Search task……">
 			</div>
-			<img @click="nz" class="nz" src="../../images/pcimg/闹钟.png" alt="">
-			<img @click="showMusicModal" class="yy" src="../../images/pcimg/音乐.png" alt="">
+			<!-- <img @click="nz" class="nz" src="../../images/pcimg/闹钟.png" alt="">
+			<img @click="showMusicModal" class="yy" src="../../images/pcimg/音乐.png" alt=""> -->
 		</div>
 		<!-- 控件标头 -->
 		<div class="title">
-			<div class="content">All tasks</div>
-			<div>
-				<div class="time">24:59</div>
+			<div class="content">Calendar</div>
+			<!-- <div>
+				<div id="time" class="time">25:0</div>
 				<div class="music"><img src="../../images/pcimg/播放按钮.png" alt=""></div>
-			</div>
+			</div> -->
 		</div>
 		<!-- 内容部分 -->
 		<div class="contentBox">
 			<div class="contentLeft">
-				<div class="home">
-					<img src="../../images/pcimg/home.png" alt="">
+				<div class="home" style="margin-left: -12px;">
+					<img style="width: 25px;" src="../../images/pcimg/home.png" alt="">
 					<span>Home</span>
 				</div>
 				<div class="home" id="toPitch">
-					<img style="width: 23px;" src="../../images/pcimg/叹号.png" alt="">
+					<img style="width: 18px;" src="../../images/pcimg/叹号.png" alt="">
 					<span>Due soon</span>
 				</div>
 				<div class="home" id="prototype">
-					<img src="../../images/pcimg/卡.png" alt="">
+					<img style="width: 25px;" src="../../images/pcimg/卡.png" alt="">
 					<span>Finished</span>
+				</div>
+				<div @click="showMusicModal" class="home" id="prototype" style="margin-left: -12px;">
+					<img style="width: 33px;" src="../../images/pcimg/yy.png" alt="">
+					<span style="margin-top: -2px;">Music</span>
 				</div>
 			</div>
 			<div class="contentRight">
@@ -153,6 +157,7 @@
 	<script src="../../js/modules/element-ui/js/index.js"></script>
 	<script src="./main.js"></script>
 	<script>
+	
 		$(function() {
 			$("body").parent().css("overflow-y","hidden");
 			$("body").parent().css("overflow-X","hidden");
@@ -167,10 +172,40 @@
 		})
 	</script>
 	<script>
-		
+
 			var toPitch = document.getElementById('toPitch');
 			var prototype = document.getElementById('prototype');
 			var addTask = document.getElementById('addTask');
+
+			// var maxtime = 25 * 60; //  
+
+			// function CountDown() {
+
+			// 		if (maxtime >= 0) {
+
+			// 				minutes = Math.floor(maxtime / 60);
+
+			// 				seconds = Math.floor(maxtime % 60);
+
+			// 			var	msg = minutes + ":" + seconds;
+
+			// 			document.getElementById('time').innerHTML = msg;
+
+			// 				if (maxtime == 5 * 60)alert("距离结束仅剩5分钟");
+
+			// 						--maxtime;
+
+			// 		} else{
+
+			// 				clearInterval(timer);
+
+			// 				alert("时间到，结束!");
+
+			// 		}
+
+			// }
+
+			// timer = setInterval("CountDown()", 1000);  
 		
 			toPitch.onclick = function() {
 				window.location.href = './webAppPitch.html'

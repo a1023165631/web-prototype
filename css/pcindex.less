@@ -5,7 +5,23 @@
     width: 1170px;
     height: 500px;
     margin: 0 auto;
-
+    // nav 导航
+    .nav {
+      width: 100%;
+      ul {
+        display: flex;
+        list-style: none;
+        font-size: 18px;
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        cursor: pointer;
+        li {
+          margin-right: 25px;
+        }
+      }
+    }
     // 头部样式
     .header {
       margin-top: 40px;
@@ -13,20 +29,58 @@
         height: 80px;
       }
       span {
-        color: #CFBDDA;
-        font-size: 25px;
+        // color: #CFBDDA;
+        font-size: 22px;
+        font-weight: bold;
         position: relative;
         top: 5px;
+        left: 20px;
       }
     }
-    // 英文描述
-    .eglisthDes {
-      position: relative;
+    // 英文描述engDesBox
+    .engDesBox {
+      width: 100%;
+      height: 200px;
+      background-color: #fff;
+      margin-top: 120px;
+      padding: 0 40px;
       img {
-        width: 550px;
-        position: absolute;
-        right: 0;
-        top: 50px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    // footer
+    .footer {
+      width: 100%;
+      height: 100px;
+      background-color: #CFEAF0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      .row1 {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        border-bottom: 1px solid #CBE3E8;
+        margin-left: 1050px;
+
+        ul {
+          list-style: none;
+          font-weight: bold;
+          font-size: 18px;
+          display: flex;
+          li {
+            margin-right: 20px;
+          }
+        }
+      }
+      .row2 {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 170px;
       }
     }
     // 登录面板
@@ -36,6 +90,11 @@
       background-color: #F7F5CA;
       border-radius: 20px;
       margin-top: 150px;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
       .loginBox {
         position: relative;
         img {
@@ -91,17 +150,19 @@
       
         }
       }
-    }
-
-    // 思考图片
-    .thinkImg {
-      position: relative;
-      img {
-        width: 300px;
+      .clear {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
         position: absolute;
-        right: 0;
+        top: 20px;
+        right: 20px;
       }
     }
+
 
    
   }

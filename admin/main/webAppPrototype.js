@@ -2,7 +2,7 @@
 var vm = new Vue({
   el: '#app',
   data: {
-    value3:89,
+    value2:89,
     isMusicTrue: false
   },
   methods: {
@@ -14,6 +14,9 @@ var vm = new Vue({
     },
     showMusicModal() {
       this.isMusicTrue = true;
+    },
+    toHome() {
+      window.location.href = './main.html'
     }
   }
 });

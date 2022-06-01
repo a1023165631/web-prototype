@@ -1,4 +1,355 @@
 @media screen and (min-width: 1200px) {
+  html,
+  body {
+    position: relative;
+  }
+  .headerBgc {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    position: relative;
+  }
+  #layoutBox {
+    position: relative;
+    width: 1170px;
+    height: 500px;
+    margin: 0 auto;
+  }
+  #layoutBox .headerBox {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: -50px;
+  }
+  #layoutBox .headerBox img {
+    height: 54px;
+    position: absolute;
+    top: 0;
+    left: 25px;
+  }
+  #layoutBox .headerBox .inputBox {
+    width: 93%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #231916;
+    position: absolute;
+    top: 0;
+    left: 110px;
+  }
+  #layoutBox .headerBox .inputBox img {
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  #layoutBox .headerBox .inputBox input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-indent: 80px;
+    font-size: 20px;
+  }
+  #layoutBox .headerBox .nz {
+    position: absolute;
+    top: 0;
+    left: 800px;
+  }
+  #layoutBox .headerBox .yy {
+    position: absolute;
+    top: 0;
+    left: 1000px;
+  }
+  #layoutBox .title {
+    display: flex;
+    justify-content: space-between;
+  }
+  #layoutBox .title .content {
+    font-size: 28px;
+    margin-left: 150px;
+    margin-top: 30px;
+  }
+  #layoutBox .title .time {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    left: -263px;
+    top: 40px;
+  }
+  #layoutBox .title .music img {
+    width: 120px;
+    position: relative;
+    left: -77px;
+    top: -6px;
+  }
+  #layoutBox .contentBox {
+    width: 100%;
+    height: 480px;
+    margin-top: 30px;
+    display: flex;
+  }
+  #layoutBox .contentBox .contentLeft {
+    width: 10%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C5E6ED;
+    position: relative;
+    top: -90px;
+    cursor: pointer;
+  }
+  #layoutBox .contentBox .contentLeft .home {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    top: -350px;
+  }
+  #layoutBox .contentBox .contentLeft .home img {
+    width: 30px;
+  }
+  #layoutBox .contentBox .contentLeft .home span {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  #layoutBox .contentBox .contentRight {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  #layoutBox .contentBox .contentRight .tabBox {
+    width: 100%;
+    height: 50%;
+  }
+  #layoutBox .contentBox .contentRight .tabBox .title {
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 8px;
+  }
+  #layoutBox .contentBox .contentRight .tabBox .itemBox {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -15px;
+  }
+  #layoutBox .contentBox .contentRight .tabBox .itemBox .item {
+    width: 25%;
+    height: 185px;
+    background-color: #F7F5CA;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  #layoutBox .contentBox .contentRight .tabBox .itemBox .item img {
+    width: 40px;
+    padding-left: 200px;
+  }
+  #layoutBox .contentBox .contentRight .tabBox .itemBox .item .titleNick {
+    text-align: center;
+    font-size: 25px;
+  }
+  #layoutBox .contentBox .contentRight .tabBox .itemBox .item .des {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  #layoutBox .contentBox .contentRight .tabBox .itemBox .item .timeBox {
+    position: relative;
+    left: 145px;
+    top: 35px;
+  }
+  #layoutBox .contentBox .contentRight .tabBox .tabInput {
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-left: 50px;
+    margin-top: 40px;
+    position: relative;
+    top: -15px;
+  }
+  #layoutBox .contentBox .contentRight .tabBox .tabInput input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+  }
+  #layoutBox .contentBox .contentRight .tabBox .addTask {
+    width: 25%;
+    height: 185px;
+    border: 1px solid #8C9B9E;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #layoutBox .contentBox .contentRight .tabBox .addTask img {
+    width: 30px;
+  }
+  #layoutBox .contentBox .contentRight .tabBox .addTask span {
+    font-size: 25px;
+  }
+  #showModal {
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    display: none;
+  }
+  #showModal .modalBox {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #231916;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #showModal .modalBox .item1 {
+    margin: 40px 20%;
+  }
+  #showModal .modalBox .item1 input {
+    width: 220px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    outline: none;
+    text-indent: 10px;
+    text-align: center;
+  }
+  #showModal .modalBox .item1 span {
+    font-weight: bold;
+  }
+  #showModal .modalBox .item2 {
+    margin: 40px 20%;
+    display: flex;
+    position: relative;
+    top: 20px;
+  }
+  #showModal .modalBox .item2 span {
+    font-weight: bold;
+  }
+  #showModal .modalBox .item2 .colors {
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 20px;
+    top: -20px;
+  }
+  #showModal .modalBox .item2 .colors .color1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #F7F5CA;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #showModal .modalBox .item2 .colors .color2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FBE3CE;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #showModal .modalBox .item2 .colors .color3 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #F8CCCF;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #showModal .modalBox .item2 .colors .color4 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #E6BED8;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #showModal .modalBox .item2 .colors .color5 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #A1BEE4;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #showModal .modalBox .item2 .colors .color6 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #8FD2E9;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #showModal .modalBox .item2 .colors .color7 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #BADCB4;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #showModal .modalBox .item2 .colors .color8 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #A1D6CC;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  #showModal .modalBox .item3 {
+    margin: 40px 20%;
+  }
+  #showModal .modalBox .item3 input {
+    width: 210px;
+    height: 30px;
+    background-color: #fdefef;
+    border-radius: 10px;
+    outline: none;
+    text-indent: 10px;
+    text-align: center;
+  }
+  #showModal .modalBox .item3 span {
+    font-weight: bold;
+  }
+  #showModal .clear {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    right: 470px;
+    top: 210px;
+    cursor: pointer;
+  }
   .musicModal {
     width: 100%;
     height: 100%;
@@ -8,7 +359,6 @@
     top: 0;
     left: 0;
     opacity: 0.8;
-    /* display: none; */
   }
   .musicModal .musicBox {
     width: 400px;

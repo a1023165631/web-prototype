@@ -1,9 +1,12 @@
+#layoutBox {
+  position: relative;
+}
 #layoutBox .header {
   width: 100%;
   height: 150px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-left: 8%;
 }
 #layoutBox .header img {
   width: 15%;
@@ -11,14 +14,29 @@
 }
 #layoutBox .header span {
   margin-top: 50rpx;
-  color: #CFBDDA;
   margin-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#layoutBox .nav {
+  width: 100%;
+  padding: 0 30px;
+  margin-top: -20px;
+}
+#layoutBox .nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+#layoutBox .nav ul li {
   font-size: 15px;
+  font-weight: bold;
 }
 #layoutBox .engDes {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 #layoutBox .engDes img {
   width: 85%;
@@ -31,7 +49,20 @@
   background-color: #F7F5CA;
   border-radius: 10px;
   margin: 0 auto;
-  margin-top: 40px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+#layoutBox .loginBox .clear {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 15px;
 }
 #layoutBox .loginBox .logoImg img {
   width: 90px;
@@ -72,6 +103,17 @@
   font-size: 10px;
   text-align: center;
   padding: 0 5px;
+}
+#layoutBox .footerBox {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+#layoutBox .footerBox img {
+  width: 100%;
+  height: 100%;
 }
 #layoutBox .footerImg img {
   width: 75%;

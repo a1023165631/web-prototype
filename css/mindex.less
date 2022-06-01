@@ -1,21 +1,38 @@
 #layoutBox {
+  position: relative;
   // 头部logo
   .header {
     width: 100%;
     height: 150px;
     // background-color: pink;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
+    margin-left: 8%;
     img {
       width: 15%;
       height: 40%;
     }
     span {
       margin-top: 50rpx;
-      color: #CFBDDA;
       margin-left: 15px;
-      font-size: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  // nav
+  .nav {
+    width: 100%;
+    padding: 0 30px;
+    margin-top: -20px;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      li {
+        font-size: 15px;
+        font-weight: bold;
+      }
     }
   }
   // 英文描述
@@ -23,6 +40,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 40px;
     
     img {
       width: 85%;
@@ -37,7 +55,23 @@
     background-color: #F7F5CA;
     border-radius: 10px;
     margin: 0 auto;
-    margin-top: 40px;
+    // margin-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+
+    .clear {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      right: 20px;
+      top: 15px;
+    }
+    
     .logoImg {
       img {
         width: 90px;
@@ -80,6 +114,19 @@
         padding: 0 5px;
       }
     }
+  }
+  // footerBox
+  .footerBox {
+    width: 100%;
+    height: 50px;
+    // background-color: #CFEAF0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+   img {
+     width: 100%;
+     height: 100%;
+   }
   }
   // 思考
   .footerImg {

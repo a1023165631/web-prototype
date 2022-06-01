@@ -12,31 +12,51 @@
 
 <body>
 	<div id="layoutBox">
+		<!-- nav导航 -->
+		<div class="nav">
+			<ul>
+				<li>Home page</li>
+				<li>Download</li>
+				<li @click="showLoginModal">Login</li>
+			</ul>
+		</div>
 		<!-- 头部logo -->
 		<div class="header">
 			<img src="./images/pcimg/logo.png" alt="">
 			<span>Rockets plan</span>
 		</div>
 		<!-- 英文描述 -->
-		<div class="eglisthDes">
-			<img src="./images/pcimg/des.png" alt="">
+		<div class="engDesBox">
+			<img src="./images/pcimg/sikao.png" alt="">
+		</div>
+		<!-- footer -->
+		<div class="footer">
+			<div class="row1">
+				<ul>
+					<li>About us</li>
+					<li>Contact us</li>
+					<li>Feedback</li>
+				</ul>
+			</div>
+			<div class="row2">
+				<span>Copyright 2022 Wang. All Right Reserved</span>
+				<span>Customer Service 000-000-000 Email 123456789@.com</span>
+			</div>
 		</div>
 		<!-- login登录面板 -->
-		<div class="login">
+		<div class="login" v-if="isLoginModal">
 			<div class="loginBox">
 				<img src="./images/pcimg/Log In.png" alt="">
 				<div class="loginInput1">
 					<input type="text" placeholder="Enter your email or mobile phone number">
 				</div>
 				<div class="loginInput2" id="toMain">
-					<input type="text" placeholder="Verification code">
+					<input @click="toMain" type="text" placeholder="Verification code">
 				</div>
 			</div>
+			<div class="clear" @click="clearLoginModal">X</div>
 		</div>
-		<!-- 思考图片 -->
-		<div class="thinkImg">
-			<img src="./images/pcimg/sikao.png" alt="">
-		</div>
+		
 
 	</div>
 
@@ -46,13 +66,6 @@
 		<script src="./js/modules/bootstrap.min.js"></script>
 		<!-- <script src="./js/common.js" ></script> -->
 		<script src="./js/pcindex.js" ></script>
-		<script>
-			var tomain = document.getElementById('toMain');
-			tomain.onclick = function() {
-				window.location.href = './admin/main/main.html'
-			}
-		</script>
-
 
 </body>
 
