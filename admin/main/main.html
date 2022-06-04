@@ -4,60 +4,60 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>首页</title>
+	<title>home page</title>
 	<link rel="stylesheet" href="../../js/modules/element-ui/css/index.css">
 	<link rel="stylesheet" href="../../css/common.css">
 	<link rel="stylesheet" href="../../css/main.css">
 </head>
 <body>
 	<div id="app">
-			<!-- header背景条颜色 -->
+			<!-- header Background bar -->
 	<div class="headerBgc"></div>
 	<div id="layoutBox">
-		<!-- 头部内容 -->
+		<!-- Set the location of the logo and search box in the header -->
 		<div class="headerBox">
-			<img src="../../images/pcimg/logo.png" alt="">
+			<img src="../../images/pcimg/logo.png" alt="This is logo">
 			<div class="inputBox">
-				<img src="../../images/pcimg/搜索.png" alt="">
+				<img src="../../images/pcimg/search.png" alt="This is Search icon">
 				<input type="text" placeholder="Search task……">
 			</div>
-			<!-- <img @click="nz" class="nz" src="../../images/pcimg/闹钟.png" alt="">
-			<img @click="showMusicModal" class="yy" src="../../images/pcimg/音乐.png" alt=""> -->
+				
 		</div>
-		<!-- 控件标头 -->
+		<!-- Controls the header -->
 		<div class="title">
 			<div class="content">Calendar</div>
-			<!-- <div>
-				<div id="time" class="time">25:0</div>
-				<div class="music"><img src="../../images/pcimg/播放按钮.png" alt=""></div>
-			</div> -->
+			 <div>
+				<!--<div id="time" class="time">25:0</div>-->
+			</div> 
 		</div>
-		<!-- 内容部分 -->
+		<!-- The content part -->
+		<!--  Four function ICONS and names that can be clicked to jump to the page later -->
 		<div class="contentBox">
 			<div class="contentLeft">
 				<div class="home" style="margin-left: -12px;">
-					<img style="width: 25px;" src="../../images/pcimg/home.png" alt="">
+					<img style="width: 25px;" src="../../images/pcimg/home.png" alt="This home icon">
 					<span>Home</span>
 				</div>
 				<div class="home" id="toPitch">
-					<img style="width: 18px;" src="../../images/pcimg/叹号.png" alt="">
+					<img style="width: 18px;" src="../../images/pcimg/Exclamation point.png" alt="This is Exclamation point icon">
 					<span>Due soon</span>
 				</div>
 				<div class="home" id="prototype">
-					<img style="width: 25px;" src="../../images/pcimg/卡.png" alt="">
+					<img style="width: 25px;" src="../../images/pcimg/complete.png" alt="This complete icon">
 					<span>Finished</span>
 				</div>
 				<div @click="showMusicModal" class="home" id="prototype" style="margin-left: -12px;">
-					<img style="width: 33px;" src="../../images/pcimg/yy.png" alt="">
+					<img style="width: 33px;" src="../../images/pcimg/yy.png" alt="This music player icon">
 					<span style="margin-top: -2px;">Music</span>
 				</div>
 			</div>
+			<!--  The user can edit the task name, due time -->
 			<div class="contentRight">
 				<div class="tabBox">
 					<div class="title">Web design assignments</div>
 					<div class="itemBox">
 						<div class="item">
-							<div><img class="showModal" src="../../images/pcimg/分类.png" alt="" /></div>
+							<div><img class="showModal" src="../../images/pcimg/edit .png" alt="" /></div>
 							<div class="titleNick">Java Quiz</div>
 							<div class="des">Created on March 1,2022</div>
 							<div class="timeBox">
@@ -67,7 +67,7 @@
 						</div>
 
 						<div class="item" style="background:#FBE3CE">
-							<div><img class="showModal" src="../../images/pcimg/分类.png" alt=""></div>
+							<div><img class="showModal" src="../../images/pcimg/edit .png" alt=""></div>
 							<div id="addTask" class="titleNick">Web app pitch</div>
 							<div class="des">Created on March 1,2022</div>
 							<div class="timeBox">
@@ -77,7 +77,7 @@
 						</div>
 
 						<div class="item" style="background:#F8CCCF">
-							<div><img class="showModal" src="../../images/pcimg/分类.png" alt=""></div>
+							<div><img class="showModal" src="../../images/pcimg/edit .png" alt=""></div>
 							<div  class="titleNick">Web app prototype</div>
 							<div class="des">Created on March 1,2022</div>
 							<div class="timeBox">
@@ -86,13 +86,13 @@
 							</div>
 						</div>
 					</div>
-
+                    <!-- Create a new project input box -->
 					<div class="tabInput">
 						<input type="text" placeholder="Create a group">
 					</div>
 
 					<div  class="addTask">
-						<img src="../../images/pcimg/_增加.png" alt="">
+						<img src="../../images/pcimg/add.png" alt="">
 						<span>A new task</span>
 					</div>
 				</div>
@@ -101,7 +101,7 @@
 
 	</div>
 
-	<!-- 遮罩层 颜色控件模态框 -->
+	<!-- Edit for the task, displays the modal box for the edit task -->
 	<div id="showModal">
 		<div class="modalBox">
 			<div class="item1">
@@ -128,23 +128,23 @@
 		</div>
 		<div class="clear">X</div>
 	</div>
-	<!-- 遮罩层 音乐控件 -->
+	<!-- Mask layer music control -->
 	<div class="musicModal" v-if="isMusicTrue">
 			<div class="musicBox">
 			<audio id="audio" src="../../static/audio.mp3" autoplay>
-				您的浏览器不支持 audio 标签。
+				Your browser does not support the audio tag.
 			</audio>
 			<img src="../../images/pcimg/musicBgc.png" alt="">
-			<!-- 输入框 -->
+			<!-- Type in the search box -->
 			<div class="searchBox">
 				<input type="text" placeholder="Search for songs artists">
 				<span @click="hideMusicModal" id="clear">X</span>
 			</div>
-			<!-- 英文描述 -->
+			<!-- The lyrics -->
 			<div class="englishDes">
 				<img src="../../images/pcimg/musicMsg.png" alt="">
 			</div>
-			<!-- 滑动条 -->
+			<!-- Volume slider -->
 			<div class="slider">
 				<el-slider v-model="value2"></el-slider>
 			</div>
@@ -161,11 +161,11 @@
 		$(function() {
 			$("body").parent().css("overflow-y","hidden");
 			$("body").parent().css("overflow-X","hidden");
-			// 显示颜色模态框
+			// Displays the modal box for the edit task
 			$('.showModal').click(function() {
 				$('#showModal').css('display','block')
 			})
-			//隐藏模态框
+			//Hide the mode box for the edit task
 			$('.clear').click(function() {
 				$('#showModal').css('display','none')
 			})
@@ -177,7 +177,7 @@
 			var prototype = document.getElementById('prototype');
 			var addTask = document.getElementById('addTask');
 
-			// var maxtime = 25 * 60; //  
+			 //var maxtime = 25 * 60;   
 
 			// function CountDown() {
 
@@ -191,7 +191,7 @@
 
 			// 			document.getElementById('time').innerHTML = msg;
 
-			// 				if (maxtime == 5 * 60)alert("距离结束仅剩5分钟");
+			// 				if (maxtime == 5 * 60)alert("rest time");
 
 			// 						--maxtime;
 
@@ -199,7 +199,7 @@
 
 			// 				clearInterval(timer);
 
-			// 				alert("时间到，结束!");
+			// 				alert("Time to end!");
 
 			// 		}
 

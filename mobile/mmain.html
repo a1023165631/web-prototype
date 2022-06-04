@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>首页</title>
+  <title>Home page</title>
   <link rel="stylesheet" href="../js/modules/element-ui/css/index.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/mmain.css">
@@ -20,7 +20,7 @@
     <!-- searchBox -->
     <div class="searchBox">
       <input type="text" placeholder="Search task……">
-      <img src="../images/pcimg/搜索.png" alt="">
+      <img src="../images/pcimg/search.png" alt="">
     </div>
     <!-- contentBox -->
     <div class="contentBox">
@@ -29,7 +29,7 @@
         <h5>Web design assignments</h5>
         <div class="tabBox">
           <div class="item">
-            <img @click="showModal" src="../images/pcimg/分类.png" alt="">
+            <img @click="showModal" src="../images/pcimg/edit .png" alt="">
             <h4>Java Quiz</h4>
             <p class="des">Created March 1,2022</p>
             <div class="time">
@@ -39,7 +39,7 @@
           </div>
 
           <div class="item" style="background-color: #FBE3CE;">
-            <img @click="showModal" src="../images/pcimg/分类.png" alt="">
+            <img @click="showModal" src="../images/pcimg/edit .png" alt="">
             <h4>Web app pitch</h4>
             <p class="des">Created March 1,2022</p>
             <div class="time" >
@@ -49,15 +49,15 @@
           </div>
   
         </div>
-        <!-- 线条 -->
+        <!-- Mobile phone sliding line -->
         <div class="inline">
           <div class="inlineLeft"></div>
         </div>
-        <!-- 输入框 -->
+        <!-- Create a new project input box -->
         <input type="text" placeholder="Create a group">
         <!-- add taskbox -->
         <div class="taskBox">
-          <img src="../images/pcimg/_增加.png" alt="">
+          <img src="../images/pcimg/add.png" alt="">
           <span>A new task</span>
         </div>
       </div>
@@ -99,10 +99,10 @@
       </div>
       <div @click="noneModal" class="clear">X</div>
     </div>
-    <!-- 音乐控件 -->
+    <!-- Mask layer music control -->
     <div v-if="isMusicTrue" class="musicBox">
       <audio id="audio" src="../static/audio.mp3" autoplay>
-        您的浏览器不支持 audio 标签。
+        Your browser does not support the audio tag.
       </audio>
       <img id="bf" src="../images/mimg/musicBgc.png" alt="">
       <input type="text" placeholder="Search for songs or artists">

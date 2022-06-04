@@ -11,28 +11,27 @@
 </head>
 <body>
 	<div id="app">
-			<!-- header背景条颜色 -->
+			<!-- header Background bar -->
 	<div class="headerBgc"></div>
 	<div id="layoutBox">
-		<!-- 头部内容 -->
+		<!-- Set the location of the logo and search box in the header -->
 		<div class="headerBox">
 			<img src="../../images/pcimg/logo.png" alt="">
 			<div class="inputBox">
-				<img src="../../images/pcimg/搜索.png" alt="">
+				<img src="../../images/pcimg/search.png" alt="">
 				<input type="text" placeholder="Search task……">
 			</div>
-			<!-- <img @click="nz" class="nz" src="../../images/pcimg/闹钟.png" alt="">
-			<img @click="showMusicModal" class="yy" src="../../images/pcimg/音乐.png" alt=""> -->
+			<!-- <img @click="nz" class="nz" src="../../images/pcimg/闹钟.png" alt="">-->
 		</div>
-		<!-- 控件标头 -->
+		<!-- Controls the header -->
 		<div class="title">
-			<div class="content">Emergency</div>
-			<!-- <div>
-				<div id="time" class="time">25:0</div>
-				<div class="music"><img src="../../images/pcimg/播放按钮.png" alt=""></div>
-			</div> -->
+			<div class="content">Finished</div>
+			 <div>
+				<!--<div id="time" class="time">25:0</div>-->
+			</div> 
 		</div>
-		<!-- 内容部分 -->
+		<!-- The content part -->
+		<!--Displays completed tasks-->
 		<div class="contentBox">
 			<div class="contentLeft">
 				<div @click="toHome" class="home" style="margin-left: -12px;">
@@ -40,11 +39,11 @@
 					<span>Home</span>
 				</div>
 				<div class="home" id="toPitch">
-					<img style="width: 18px;" src="../../images/pcimg/叹号.png" alt="">
+					<img style="width: 18px;" src="../../images/pcimg/Exclamation point.png" alt="">
 					<span>Due soon</span>
 				</div>
 				<div class="home" id="prototype">
-					<img style="width: 25px;" src="../../images/pcimg/卡.png" alt="">
+					<img style="width: 25px;" src="../../images/pcimg/complete.png" alt="">
 					<span>Finished</span>
 				</div>
 				<div @click="showMusicModal" class="home" id="prototype" style="margin-left: -12px;">
@@ -57,7 +56,7 @@
 					<div class="title">Web design assignments</div>
 					<div class="itemBox">
 						<div class="item" style="background:#F8CCCF;margin-top: 50px;">
-							<div><img class="showModal" src="../../images/pcimg/分类.png" alt=""></div>
+							<div><img class="showModal" src="../../images/pcimg/edit .png" alt=""></div>
 							<div id="addTask" class="titleNick">Web app pitch</div>
 							<div class="des">Created on March 1,2022</div>
 							<div class="timeBox">
@@ -73,7 +72,7 @@
 
 	</div>
 
-	<!-- 遮罩层 颜色控件模态框 -->
+	<!-- Edit for the task, displays the modal box for the edit task -->
 	<div id="showModal">
 		<div class="modalBox">
 			<div class="item1">
@@ -100,25 +99,25 @@
 		</div>
 		<div class="clear">X</div>
 	</div>
-	<!-- 遮罩层 音乐控件 -->
+	<!-- Mask layer music control -->
 	<div class="musicModal" v-if="isMusicTrue">
-			<div class="musicBox">
-			<audio id="audio" src="../../static/audio.mp3" autoplay>
-				您的浏览器不支持 audio 标签。
-			</audio>
-			<img src="../../images/pcimg/musicBgc.png" alt="">
-			<!-- 输入框 -->
-			<div class="searchBox">
-				<input type="text" placeholder="Search for songs artists">
-				<span @click="hideMusicModal" id="clear">X</span>
-			</div>
-			<!-- 英文描述 -->
-			<div class="englishDes">
-				<img src="../../images/pcimg/musicMsg.png" alt="">
-			</div>
-			<!-- 滑动条 -->
-			<div class="slider">
-				<el-slider v-model="value2"></el-slider>
+		<div class="musicBox">
+		<audio id="audio" src="../../static/audio.mp3" autoplay>
+			Your browser does not support the audio tag.
+		</audio>
+		<img src="../../images/pcimg/musicBgc.png" alt="">
+		<!-- Type in the search box -->
+		<div class="searchBox">
+			<input type="text" placeholder="Search for songs artists">
+			<span @click="hideMusicModal" id="clear">X</span>
+		</div>
+		<!-- The lyrics -->
+		<div class="englishDes">
+			<img src="../../images/pcimg/musicMsg.png" alt="">
+		</div>
+		<!-- Volume slider -->
+		<div class="slider">
+			<el-slider v-model="value2"></el-slider>
 			</div>
 		</div>
 	</div>
@@ -133,11 +132,11 @@
 		$(function() {
 			$("body").parent().css("overflow-y","hidden");
 			$("body").parent().css("overflow-X","hidden");
-			// 显示颜色模态框
+			// Displays the modal box for the edit task
 			$('.showModal').click(function() {
 				$('#showModal').css('display','block')
 			})
-			//隐藏模态框
+			//Hide the mode box for the edit task
 			$('.clear').click(function() {
 				$('#showModal').css('display','none')
 			})

@@ -48,7 +48,7 @@
   #layoutBox .footer {
     width: 100%;
     height: 100px;
-    background-color: #CFEAF0;
+    background-color: #ecae52;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -57,7 +57,7 @@
     width: 100%;
     height: 60px;
     line-height: 60px;
-    border-bottom: 1px solid #CBE3E8;
+    border-bottom: 1px solid #ecae52;
     margin-left: 1050px;
   }
   #layoutBox .footer .row1 ul {

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1, user-scalable=no">
-	<title>官方网站</title>
+	<title>The official website</title>
 	<link rel="stylesheet" href="./css/modules/bootstrap.css">
 	<link rel="stylesheet" href="./css/common.css">
 	<link rel="stylesheet" href="./css/pcindex.css">
@@ -12,7 +12,7 @@
 
 <body>
 	<div id="layoutBox">
-		<!-- nav导航 -->
+		<!-- The navigation section of a web page -->
 		<div class="nav">
 			<ul>
 				<li>Home page</li>
@@ -20,14 +20,14 @@
 				<li @click="showLoginModal">Login</li>
 			</ul>
 		</div>
-		<!-- 头部logo -->
+		<!-- Logo and Name -->
 		<div class="header">
-			<img src="./images/pcimg/logo.png" alt="">
+			<img src="./images/pcimg/logo.png" alt="This is logo">
 			<span>Rockets plan</span>
 		</div>
-		<!-- 英文描述 -->
+		<!-- Software introduction and illustration-->
 		<div class="engDesBox">
-			<img src="./images/pcimg/sikao.png" alt="">
+			<img src="./images/pcimg/sikao.png" alt="This is introduction and illustration">
 		</div>
 		<!-- footer -->
 		<div class="footer">
@@ -43,10 +43,10 @@
 				<span>Customer Service 000-000-000 Email 123456789@.com</span>
 			</div>
 		</div>
-		<!-- login登录面板 -->
+		<!-- Click to trigger the hidden login panel, and enter your email or mobile phone number to get a verification code to enter the software -->
 		<div class="login" v-if="isLoginModal">
 			<div class="loginBox">
-				<img src="./images/pcimg/Log In.png" alt="">
+				<img src="./images/pcimg/Log In.png" alt="This is login panel ">
 				<div class="loginInput1">
 					<input type="text" placeholder="Enter your email or mobile phone number">
 				</div>

@@ -28,7 +28,7 @@
     <!-- searchBox -->
     <div class="searchBox">
       <input type="text" placeholder="Search task……">
-      <img src="../images/pcimg/搜索.png" alt="">
+      <img src="../images/pcimg/search.png" alt="">
     </div>
     <!-- contentBox -->
     <div class="contentBox">
@@ -37,7 +37,7 @@
         <h5>Web design assignments</h5>
         <div class="tabBox">
           <div class="item">
-            <img @click="showModal" src="../images/pcimg/分类.png" alt="">
+            <img @click="showModal" src="../images/pcimg/edit .png" alt="">
             <h4>Java Quiz</h4>
             <p class="des">Created March 1,2022</p>
             <div class="time">
@@ -58,7 +58,7 @@
       <img @click="showMusicModal" src="../images/mimg/musicIcon.png" alt="">
     </div>
 
-    <!-- 遮罩层 颜色控件模态框 -->
+    <!-- Edit for the task, displays the modal box for the edit task -->
     <div v-if="isTrue" id="showModal">
       <div class="modalBox">
         <div class="list1">
@@ -85,10 +85,10 @@
       </div>
       <div @click="noneModal" class="clear">X</div>
     </div>
-     <!-- 音乐控件 -->
-     <div v-if="isMusicTrue" class="musicBox">
+     <!-- Mask layer music control -->
+    <div v-if="isMusicTrue" class="musicBox">
       <audio id="audio" src="../static/audio.mp3" autoplay>
-        您的浏览器不支持 audio 标签。
+        Your browser does not support the audio tag.
       </audio>
       <img src="../images/mimg/musicBgc.png" alt="">
       <input type="text" placeholder="Search for songs or artists">

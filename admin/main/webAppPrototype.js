@@ -21,11 +21,11 @@ var vm = new Vue({
   }
 });
 
-  // 显示颜色模态框
+  // Display color modal box
   $('.showModal').click(function() {
     $('#showModal').css('display','block')
   })
-  //隐藏模态框
+  //Hide the modal box
   $('.clear').click(function() {
     $('#showModal').css('display','none')
   })

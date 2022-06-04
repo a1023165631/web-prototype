@@ -24,11 +24,11 @@ var vm = new Vue({
   }
 });
 
-	// 显示音乐控件模态框
+	// Click to display the music player modal box
   $('.yy').click(function() {
     $('.musicModal').css('display','block')
   })
-  //隐藏模态框
+  //Hide the modal box
   $('#clear').click(function() {
     $('.musicModal').css('display','none')
   })

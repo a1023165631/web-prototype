@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>登录页</title>
+  <title>The login page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="./css/modules/bootstrap.css">
   <link rel="stylesheet" href="./css/common.css">
@@ -17,12 +17,12 @@
 <body>
 
   <div id="layoutBox">
-    <!-- 头部logo -->
+    <!-- Logo and Name -->
     <div class="header">
       <img src="./images/mimg/login.png" alt="">
       <span>Rockets plan</span>
     </div>
-    <!-- nav -->
+    <!-- The navigation section -->
     <div class="nav">
       <ul>
         <li>Home page</li>
@@ -30,14 +30,14 @@
         <li @click="showLoginModal">Log in</li>
       </ul>
     </div>
-    <!-- 英文描述 -->
+    <!-- Software introduction -->
     <div class="engDes">
       <img src="./images/mimg/loginMsg.png" alt="">
     </div>
  
-    <!-- 思考 -->
+    <!-- illustration -->
     <div class="footerImg">
-      <img src="./images/mimg/思考.png" alt="">
+      <img src="./images/mimg/thinking.png" alt="">
     </div>
 
     <!-- footerBox -->
@@ -45,7 +45,7 @@
       <img src="./images/mimg/footerBox.png" alt="">
     </div>
 
-       <!-- 登录面板 -->
+       <!-- Click to trigger the hidden login panel, and enter your email or mobile phone number to get a verification code to enter the software -->
     <div class="loginBox" v-if="isLoginModal">
       <div class="logoImg"><img src="./images/mimg/loginTitle.png" alt=""></div>
       <div class="input1"><input type="text" placeholder="Enter your email or mobile phone number"></div>

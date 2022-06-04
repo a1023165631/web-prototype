@@ -11,28 +11,27 @@
 </head>
 <body>
 	<div id="app">
-		<!-- header背景条颜色 -->
+		<!-- header Background bar -->
 	<div class="headerBgc"></div>
 	<div id="layoutBox">
-		<!-- 头部内容 -->
+		<!-- Set the location of the logo and search box in the header -->
 		<div class="headerBox">
 			<img src="../../images/pcimg/logo.png" alt="">
 			<div class="inputBox">
-				<img src="../../images/pcimg/搜索.png" alt="">
+				<img src="../../images/pcimg/search.png" alt="">
 				<input type="text" placeholder="Search task……">
 			</div>
-			<!-- <img id="nz" class="nz" src="../../images/pcimg/闹钟.png" alt="">
-			<img class="yy" src="../../images/pcimg/音乐.png" alt=""> -->
+			<img id="nz" class="nz" src="../../images/pcimg/闹钟.png" alt="">
 		</div>
-		<!-- 控件标头 -->
+		<!-- Controls the header -->
 		<div class="title">
 			<div class="content">Web App Pitch</div>
-			<!-- <div>
-				<div class="time">24:59</div>
-				<div class="music"><img src="../../images/pcimg/播放按钮.png" alt=""></div>
-			</div> -->
+			<div>
+				<div class="time">25:00</div>
+			</div> 
 		</div>
-		<!-- 内容部分 -->
+		<!-- The content part -->
+		<!--The main body is mainly the user can edit some lists, due to the lack of personal ability, can not do a list module can be dragged at will-->
 		<div class="contentBox">
 			<div class="item1">
 				<div class="list1">
@@ -40,53 +39,53 @@
 					<span>List(3)</span>
 				</div>
 				<div class="list2">
-					<img class="showModal" src="../../images/pcimg/分类.png" alt="">
+					<img class="showModal" src="../../images/pcimg/edit .png" alt="">
 					Research
 				</div>
 				<div class="list3">
-					<img class="showModal" src="../../images/pcimg/分类.png" alt="">
+					<img class="showModal" src="../../images/pcimg/edit .png" alt="">
 					Braninstorming
 				</div>
 				<div class="list4">
-					<img class="showModal" src="../../images/pcimg/分类.png" alt="">
+					<img class="showModal" src="../../images/pcimg/edit .png" alt="">
 					Iteration
 				</div>
 				<div class="list5">
-					<img style="width: 20px;position: absolute;top:15px;left: 35px;" src="../../images/pcimg/_增加.png" alt="">
+					<img style="width: 20px;position: absolute;top:15px;left: 35px;" src="../../images/pcimg/add.png" alt="">
 					<span>Add a card</span>
 				</div>
 			</div>
 			<div class="item2">
 				<div class="list1">
-					<img src="../../images/pcimg/加载.png" alt="">
+					<img src="../../images/pcimg/ongoing.png" alt="">
 					<span>On-going(1)</span>
 				</div>
 				<div class="list2">
-					<img class="showModal" src="../../images/pcimg/分类.png" alt="">
+					<img class="showModal" src="../../images/pcimg/edit .png" alt="">
 					Research
 				</div>
 				<div class="list5">
-					<img style="width: 20px;position: absolute;top:15px;left: 35px;" src="../../images/pcimg/_增加.png" alt="">
+					<img style="width: 20px;position: absolute;top:15px;left: 35px;" src="../../images/pcimg/add.png" alt="">
 					<span>Add a card</span>
 				</div>
 			</div>
 			<div class="item3">
 				<div class="list1">
-					<img src="../../images/pcimg/对勾.png" alt="">
+					<img src="../../images/pcimg/Done.png" alt="">
 					<span>Done(1)</span>
 				</div>
 				<div class="list2">
-					<img class="showModal" src="../../images/pcimg/分类.png" alt="">
+					<img class="showModal" src="../../images/pcimg/edit .png" alt="">
 					Design Brief
 				</div>
 				<div class="list5">
-					<img style="width: 20px;position: absolute;top:15px;left: 35px;" src="../../images/pcimg/_增加.png" alt="">
+					<img style="width: 20px;position: absolute;top:15px;left: 35px;" src="../../images/pcimg/add.png" alt="">
 					<span>Add a card</span>
 				</div>
 			</div>
 			<div class="item4">
 				<div class="list1">
-					<img src="../../images/pcimg/添加png.png" alt="">
+					<img src="../../images/pcimg/add list.png" alt="">
 					<span>Add a list</span>
 				</div>
 			</div>
@@ -95,7 +94,7 @@
 		</div>
 
 	</div>
-	<!-- 遮罩层 模态框 -->
+	<!-- Click the edit button to appear a fuzzy layer, marking each task -->
 	<div id="showModal">
 		<div class="modalBox">
 			<div class="title">Web app pitch/List</div>
@@ -131,50 +130,49 @@
 		</div>
 		<div class="clear">X</div>
 	</div>
-		<!-- 遮罩层 音乐控件 -->
+		<!-- Click the music function button to appear a blur layer -->
 		<div class="musicModal">
 			<div class="musicBox">
 				<img src="../../images/pcimg/musicBgc.png" alt="">
-				<!-- 输入框 -->
+				<!-- Type in the search box -->
 				<div class="searchBox">
 					<input type="text" placeholder="Search for songs artists">
 					<span id="clear">X</span>
 				</div>
-				<!-- 英文描述 -->
+				<!-- The lyrics -->
 				<div class="englishDes">
 					<img src="../../images/pcimg/musicMsg.png" alt="">
 				</div>
-				<!-- 滑动条 -->
+				<!-- Volume slider -->
 				<div class="slider">
 					<el-slider v-model="value2"></el-slider>
 				</div>
 			</div>
 		</div>
 	</div>
-
-
 	<script src="../../js/modules/jquery.js"></script>
 	<script src="../../js/modules/vue.min.js"></script>
 	<script src="../../js/modules/element-ui/js/index.js"></script>
 	<script src="./main.js"></script>
-	<script>
+	<script>		
+// timer = setInterval("CountDown()", 1000);  
 		$(function() {
 			$("body").parent().css("overflow-y","hidden");
 			$("body").parent().css("overflow-X","hidden");
-			// 显示模态框
+			// Displays the modal box for the edit task
 			$('.showModal').click(function() {
 				$('#showModal').css('display','block')
 			})
-			//隐藏模态框
+			//Hide the mode box for the edit task
 			$('.clear').click(function() {
 				$('#showModal').css('display','none')
 			})
 
-				// 显示音乐控件模态框
+				// Displays the music player control modal box
 				$('.yy').click(function() {
 				$('.musicModal').css('display','block')
 			})
-			//隐藏模态框
+			//Hide the music player's modal box
 			$('#clear').click(function() {
 				$('.musicModal').css('display','none')
 			})
