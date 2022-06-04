@@ -1,8 +1,5 @@
-// index 主页方法
-
-
-
-// 实例化公共vue实例
+// index home page method
+// Instantiate the public vue instance
 var app = new Vue({
   el:"#layoutBox",
   data: {

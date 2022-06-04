@@ -31,7 +31,7 @@
     border: 1px solid #231916;
     position: absolute;
     top: 0;
-    left: 200px;
+    left: 80px;
   }
   #layoutBox .headerBox .inputBox img {
     width: 30px;
@@ -50,8 +50,8 @@
   }
   #layoutBox .headerBox .nz {
     position: absolute;
-    top: 0;
-    left: 800px;
+    top: 70px;
+    left: 780px;
   }
   #layoutBox .headerBox .yy {
     position: absolute;

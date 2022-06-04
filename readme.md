@@ -1,27 +1,33 @@
-# Product iteration comparison diagram
+# **User feedback**
+User feedback：
+The main ways to obtain user feedback are questionnaire, telephone return visit and face-to-face communication. After my page was designed for the first time, I collected the following relevant information through communication with several users, which will be the main work part and improvement content of my subsequent iterations.
+1. On the login page, users do not understand the performance and functions of the page, and the font on the page is very small, so users cannot understand the meaning of the whole page. The huge login page creates a sense of pressure for users to log in.
+2. As for the color of the page, some users give feedback that they hope to change the color to a more positive and energetic color, so that they will be more active in the process of using it. Through the collection of votes, 7 students chose yellow and 3 students chose blue. Yellow is more attractive in comparison.
+3. As for the Logo, through communication with many users, I found that users could not remember the style of the Logo at all. For a WEB, the Logo represents the image of a company. Therefore, the logo needs to be re-designed and edited later.
+# **Product iteration comparison diagram**
 ![image](images\iteration\mainpage-iteration.png)
 
-According to user feedback, the initial landing page did not generate interest in the software. The idea is to simplify the way users log in, ignoring the fact that they need a first impression to log in or use a program. Therefore, the text introduction of the software was changed to make it more conspicuous and easier for users to read, and illustrations were added to increase users' interest. For the background color from the original blue to now orange yellow, bright color can give users more motivation. According to the teacher's feedback, as the most basic structure of a web page, the navigation bar, copyright information and contact with developers, feedback function was added.
+According to user feedback, when users enter the home page, they cannot clearly understand the intention and function of the website, and it is not attractive enough. The idea is to simplify the way users log in, ignoring the fact that they won't log in because of a big login box if they don't know a product. On the contrary, users may be more resistant. Therefore, the following modifications were made. The text of the software was enlarged to make it more eye-catching and easy for users to read, and illustrations were added to increase users' interest. As for the background color, from the original blue to the present orange yellow, yellow is the color of hope, which can give users more motivation when facing difficult assignments. According to the teacher's feedback, as the most basic structure of the web page, added the navigation bar, copyright information, contact with developers, feedback and other functions.
 
 # Iteration of logo
 ![image](images\iteration\logo-itera.png)
 
-According to users' feedback, the color of my logo does not match the background color, so I changed the logo and software name to a black and white color matching the theme.
+From the perspective of Visual analysis, the previous purple background was not clear enough for users to quickly capture their attention, so it was changed to a simple white color to form a contrast color with the black rocket to highlight the visual effect.
 
 # Iteration of Background and position of function icons
 ![image](images\iteration\functionbg2.png)
 
-According to the feedback of users, users who are not familiar with the functions of the home page will be confused at first, and then confused. Therefore, these functions will be enlarged on the left side and background mask will be added to make it easier for users to use the software.
+According to the user's feedback, the user who is not familiar with the home page function, will be confused first, and then disorderly click the function icon. Therefore, these features will zoom in on the left side and add a background mask to draw the user's attention and make it easier to use the software.
 
 ![image](images\iteration\icon.png)
 
-In the past, ICONS of music function and timer function were distributed in the upper right corner, and other functions were on the left side of the page, resulting in confusion and inconvenient for users to use, so they were unified in the function bar on the left side of the page.
+In the past, the icon's music function and timer function were distributed in the upper right corner, among which the timer function confused users. According to the survey, it was found that users liked to listen to music when finishing their work, so music was placed on the left as a common function, and timer function was placed on the page when users were working on a specific task.
 
 # Iteration of search bar
 
 ![image](images\iteration\Top-searchbar.png)
 
-After the function icon at the top was moved, the search bar was lengthened to make it easier for users to see the search box and content at a glance.
+Because the main function of the page is to help the user complete the job. In the process of searching, users may search for part of the assignment and locate the specific address of the assignment. Extend the search bar, help users better access to relevant information, and effective editing in the search bar. The long search bar is shorter and displays more content, making it more convenient for users to use.
 
 # Iteration of title
 
@@ -31,15 +37,26 @@ For the previous title, which was not easy for users to understand directly, cha
 
 ![image](images\iteration\title-iteration2.png)
 
-Change the page title of the due soon to emergency and use red font to warn the due assignment
+The function page of the font itself is to remind users of the contents that need to be handed in as soon as possible. It is a countdown and reminder of the assignment. It is changed to emergency in red to better attract users' attention and enhance the effect of reminding.
 
-# User feedback
-User feedback：
-Jax(A freshman majoring in accounting)
-When I open the home page, I think the overall sense is not enough to attract me, and the software introduction font is not obvious enough, so I don't want to know more.The overall color including icon is not particularly conspicuous.
+Reference:
 
-Abby(A sophomore majoring in design computer)
-The logo design is good, but when combined with the page, it will look mismatched and not coordinated enough in terms of color. Login page is not necessary to do so big, can reduce or do click trigger, hidden features do not let the user easy to understand, when I entered the home page, I don't see a key or a hint, all ICONS including background color is similar, I will help you understand these points about the usefulness of function, It is suggested that the functions should be organized so that users can enter this page to clearly carry out each step of the operation, rather than mindless chaos
+XhmikosR(2022). _twbs/bootstrap_,Retrieved fromhttps://github.com/twbs/bootstrap/blob/main/LICENSE.
 
-Alex(The sophomore majored in psychology)
-I was confused by the title of each page, which could not directly express the function of this page.I feel confused for the title of each page, it is not very intuitive to express the function of the page, after I understand using method, comparing to the timer, it should not be appear on the home page, but the user to edit their own task, check finish, with a focus on time and rest time
+(N.d.). Retrieved from https://getbootstrap.com/
+
+Twbs / Bootstrap. (2022, June 4). Retrieved from https://github.com/twbs/bootstrap/graphs/contributors
+
+JQuery. (n.d.). Retrieved from https://jquery.com/
+
+Jquery / Sizzle. (n.d.). Retrieved from https://github.com/jquery/sizzle/wiki
+
+Jquery Foundation. (n.d.). Retrieved from http://jquery.org/license/
+
+Shang gui gu. (2021, July 13). Vuejs Goes from Beginner to Master. Retrieved from https://www.bilibili.com/video/BV1Zy4y1K7SH?spm_id_from=333.337.search-card.all.click
+
+Hei ma. (2019, December 21). H5 (HTML5)+ CSS3 + Mobile Front-End Video Tutorial. Retrieved from https://www.bilibili.com/video/BV14J4114768?p=504
+
+Shang. (2021, January 13). Java Language Beginner to Proficient. Retrieved from https://www.bilibili.com/video/BV1oy4y1H7R6?p=23
+
+Element. (n.d.). Retrieved from https://element.eleme.cn/#/zh-CN/component/installation

@@ -1,5 +1,5 @@
 
-// 公共方法
+// Public methods
 var baseUrl = 'http://b4137921y8.wicp.vip';
 var host = "/api/"
 
@@ -9,11 +9,11 @@ var host = "/api/"
 
 
 /* 
-*公共get请求方法
+* Public GET request methods
 *options{
-*url:请求地址
-*type:请求方式
-*success:成功回调
+* URL: request address
+*type: request mode
+* SUCCESS: successful callback
 *}
 */
 
@@ -39,12 +39,12 @@ function getvRequest(options) {
 }
 
 /* 
-*公共post请求方法
+* Public POST request method
 *options{
-*url:请求地址
-*type:请求方式
-*data:请求对象参数
-*success:成功回调
+* URL: request address
+*type: request mode
+*data: request object parameters
+* SUCCESS: successful callback
 *}
 */
 function postRequest(options) {
