@@ -38,7 +38,37 @@ For the previous title, which was not easy for users to understand directly, cha
 
 The function page of the font itself is to remind users of the contents that need to be handed in as soon as possible. It is a countdown and reminder of the assignment. It is changed to emergency in red to better attract users' attention and enhance the effect of reminding.
 
-Reference:
+# Transcription Samples
+Interviewer: Wang guo
+
+Interviewees: Jax，Alex，Abby
+
+Date of Interview: 20/05/2022 
+
+Location of Interview: Ji Nan
+
+Wang: I am Wang Guo, the host of this workshop. I hope you can give me some good suggestions on website design prototype. Thank you very much!
+First of all, I would like to ask you a question. As a college student, have you ever had insufficient assignment time arrangement, resulting in poor quality of homework in the last few days? Or you may have anticipated the situation in advance but don't want to act because of procrastination
+
+Jax,Alex,Abby: Yes, I have.
+
+Wang: Ok, let's see my web design prototype that helpful to the above problem, and I hope to give some valuable advice to me.
+
+Jax,Alex,Abby: Okay
+
+Wang:Let me ask you for feedback. Jax, do you think there is anything that needs to be improved in this website prototype?
+
+Jax: When I opened the home page, I think the software is introduced the font is not apparent, including overall color icons are not particularly conspicuous, after I login function is relatively complex, I don't understand the meaning of each function, due soon this feature is of great help to me such procrastination crowd, can remind the homework and then there were a few days to complete
+
+Alex: When I entered the home page, I was very confused about the timer function, which should not appear on the home page. I think when users edit their tasks, they will pay attention to the time and rest time after checking. This is a nice feature. For the page title I would feel confused at first, can not be very intuitive to show the function of the page.
+
+Abby: The logo is well designed, but visually, when combined with the page, it doesn't match and the color doesn't match. Login page, there is no need to do is users for landing pages should want to see more, when I enter the home page, I don't see a key or tips, all ICONS including background color is similar, suggest to organization of function, let the user to enter the page can clearly for each step of the operation, rather than blindly.
+
+# A survey of users' choice of website background color
+
+![image](https://github.com/a1023165631/web-prototype/blob/main/images/iteration/DATA-chose%20color.png)
+
+#Reference:
 
 XhmikosR(2022). _twbs/bootstrap_,Retrieved fromhttps://github.com/twbs/bootstrap/blob/main/LICENSE.
 
