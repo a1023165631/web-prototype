@@ -68,7 +68,7 @@ Abby: The logo is well designed, but visually, when combined with the page, it d
 
 ![image](https://github.com/a1023165631/web-prototype/blob/main/images/iteration/DATA-chose%20color.png)
 
-#Reference:
+# Reference:
 
 XhmikosR(2022). _twbs/bootstrap_,Retrieved fromhttps://github.com/twbs/bootstrap/blob/main/LICENSE.
 
